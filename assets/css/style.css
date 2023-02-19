@@ -210,3 +210,32 @@ footer {
 #footer-details {
     padding: 20px;
 }
+
+/* -------------------------------------------------------------------three reasons */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+.three-reasons-li {
+    font-size: 1rem;
+}
+
+.three-reasons-li a {
+    text-decoration: none;
+    color:#e67e22;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.three-reasons-li a:hover {
+    text-decoration: underline;
+    color:#e84610;
+}

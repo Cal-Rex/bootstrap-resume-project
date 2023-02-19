@@ -228,6 +228,7 @@ footer {
 
 .three-reasons-li a {
     text-decoration: none;
+    border-bottom: 1px solid #ffffff00;
     color:#e67e22;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -236,6 +237,6 @@ footer {
 }
 
 .three-reasons-li a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #e84610;
     color:#e84610;
 }

@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/* -------------------------------------------------------------------Colours */
+/*--------------------------------------------Colors*/
 
 .bg-color-name-title {
     background-color: #676767;
 }
 
 .bg-color-three-reasons {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
+}
+
+.bg-color-work-history {
+    background-color: #9b59b6;
 }
 
 .ui-menu-color-home {
@@ -30,11 +34,7 @@
     background-color: #525252;
 }
 
-/* ------------------------------------------------------------------Special paddings margins and text */
-
-.overflow-mgmt {
-    overflow: hidden;
-}
+/* ----------------------------------------Special paddings/margins/text */
 
 h1,
 h2,
@@ -63,10 +63,11 @@ h4 {
 
 .section-column {
     display: table-cell;
-    padding: 0px 30px 30px;
+    padding: 0 30px 30px;
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -74,8 +75,7 @@ h4 {
     margin-bottom: 40px;
 }
 
-/* ------------------------------------------------------------------headings */
-
+/*--------------------------------------------Heading*/
 
 header {
     margin: 0;
@@ -86,14 +86,14 @@ header {
 }
 
 .logo {
-    background: url(../images/profile.jpg);
+    background: url("../images/profile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
-    transition: all .5s ease-in out;
-    -moz-transition: all .5s ease-in out;
-    -webkit-transition: all .5s ease-in out;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .name {
@@ -101,7 +101,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .title {
@@ -110,22 +110,24 @@ header {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
 
-.menucontainer {font-size: 0;}
-
-#nav {
-    margin: 0;
+.menucontainer {
+    font-size: 0;
 }
 
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -137,7 +139,7 @@ header {
 .menuitem a {
     width: 100%;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
     height: 120px;
 }
 
@@ -159,15 +161,14 @@ header {
     letter-spacing: 2px;
 }
 
-/* ------------------------------------------------------hover.css */
+/*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background-color: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-
-/* -----------------------------------------------------------------footer */
+/* ----------------------------------------Footer */
 
 footer {
     background-color: #525252;
@@ -212,14 +213,14 @@ footer {
 }
 
 .social-links li a i:hover {
-    background-color: #e84610;
+    background: #e84610;
 }
 
 #footer-details {
     padding: 20px;
 }
 
-/* -------------------------------------------------------------------three reasons */
+/* ----------------------------------------Three Reasons */
 
 .three-reasons-icon {
     font-size: 26px;
@@ -230,30 +231,7 @@ footer {
     margin-bottom: 15px;
 }
 
-.three-reasons-li {
-    font-size: 1rem;
-}
-
-.three-reasons-li a {
-    text-decoration: none;
-    border-bottom: 1px solid #ffffff00;
-    color:#e67e22;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.three-reasons-li a:hover {
-    border-bottom: 1px solid #e84610;
-    color:#e84610;
-}
-
-#three-reasons-section-padding {
-    padding-left: 15px;
-}
-
-/* ---------------------------------------------------------------------------------personal info */
+/* ----------------------------------------Personal Info */
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -279,20 +257,16 @@ footer {
     vertical-align: top;
 }
 
-.personal-info-item .key  p {
+.personal-info-item .key p {
     font-weight: 700;
 }
 
 .personal-info-item .value {
-    width: 60%;
     position: relative;
+    width: 60%;
 }
 
-#personal-info-padding {
-    padding: 0 15px;
-}
-
-/* ---------------------------------------------------------------------------------skills */
+/* ----------------------------------------Skills */
 
 .progress {
     position: relative;
@@ -303,15 +277,60 @@ footer {
 .progress-type {
     position: absolute;
     left: 0px;
-    bottom: 0%;
-    height: 100%;
     font-weight: 400;
     padding: 3px 30px 2px 10px;
     color: #fafafa;
-    background-color: rgba(25,25,25,0.2);
-    line-height: 100%;
+    background-color: rgba(25, 25, 25, 0.2);
 }
 
 .progress-section {
     margin: 40px 20px;
+}
+
+/* ----------------------------------------Work History */
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
